@@ -131,7 +131,7 @@ def get_friends_advanced():
 		temp=db.get_advanced_friend_data(user)
 		return temp
 	except:
-		return "get_friends_advanced error"
+		return "penis"
 
 
 
