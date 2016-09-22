@@ -135,14 +135,13 @@ def get_friends():
 
 @application.route("/friends/find_advanced",methods=["POST"])
 def get_friends_advanced():
-	try:
-		db=SQLConnection()
-		data=request.get_json(force=True)
-		user=data['user_name']
-		temp=db.get_advanced_friend_data(user)
-		return temp
-	except:
-		return "get_friends_advanced error"
+
+	db=SQLConnection()
+	data=request.get_json(force=True)
+	user=data['user_name']
+	temp=db.get_advanced_friend_data(user)
+	return temp
+
 
 
 
