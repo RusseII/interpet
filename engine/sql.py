@@ -12,7 +12,6 @@ class SQLConnection:
 
     _db_name = ''
     _hostname = ''
-    _ip_address = ''
     _username = ''
     _password = ''
 
@@ -24,7 +23,6 @@ class SQLConnection:
         try:
             _db_name = config.get(self.section_name, 'db_name')
             _hostname = config.get(self.section_name, 'hostname')
-            _ip_address = config.get(self.section_name, 'ip_address')
             _user = config.get(self.section_name, 'user')
             _password = config.get(self.section_name, 'password')
         except ConfigParser.NoOptionError as e:
