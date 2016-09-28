@@ -234,7 +234,7 @@ class fitbit():
             pet_status="happy"
           else:
             message=pet_name+" got plenty of exercise yesterday and as a result he is very happy! +" + str(xp_change) +" xp"
-            pet_status="fit"
+            pet_status="happy"
           print "added"
           current_xp=db.get_xp(username)
           db.insert_events(username,category,pet_status,xp_change,message,type1,current_xp)
